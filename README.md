@@ -11,17 +11,23 @@ Powered by advanced techniques, the coherent text generator analyzes patterns an
 
 ## 🚀 Example Usage
 ```python
-from coherent_text_generator import TextGenerator
+#build and import the model  
+# Generate text
+seed_text = "Hello"
+next_words = 50
 
-# Load the trained text generator model
-generator = TextGenerator()
+for _ in range(next_words):
+    token_list = tokenizer.texts_to_sequences([seed_text])[0]
+    token_list = pad_sequences([token_list], maxlen=max_sequence_length-1, padding='pre')
+    predicted = np.argmax(model.predict(token_list), axis=-1)
+    output_word = ""
+    for word, index in tokenizer.word_index.items():
+        if index == predicted:
+            output_word = word
+            break
+    seed_text += " " + output_word
 
-# Provide an input string to initiate text generation
-input_text = "Once upon a time"
-generated_text = generator.generate_text(input_text)
-
-print("Generated Text:")
-print(generated_text)
+print("Generated Text:", seed_text)
 ```
 
 ## 🔮 Future Enhancements
