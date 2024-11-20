@@ -38,6 +38,8 @@ The journey of the coherent text generator is filled with exciting possibilities
     -Integration into creative writing, chatbots, and other applications.
 
 ## 🎉 Conclusion
+
+This inspired me to build the code generator AI (check out this)[https://github.com/GunaShankar0213/AI-based-Code-Generator-Java-Python-]
 The coherent text generator model unveils the remarkable potential of AI in comprehending and replicating language patterns. By extracting insights from the "Personality Persona CSV Dataset," this model transforms into a versatile tool for generating coherent and contextually relevant text. As the model continues to evolve, it holds the promise of elevating various applications that demand human-like text generation.
 
 Feel free to dive into the codebase, embark on experimentation, and contribute to the captivating realm of coherent text generation! 📚🌟
